@@ -1,7 +1,6 @@
 <?php
 
 
-
 class Car
 {
     private $engine;
@@ -14,6 +13,11 @@ class Car
     public function start()
     {
         $this->engine->runDrive();
+    }
+    
+    public function checkCharge()
+    {
+        $this->engine->checkCharge();
     }
     
 }
