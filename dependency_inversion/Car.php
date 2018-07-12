@@ -1,11 +1,19 @@
 <?php
 
+
+
 class Car
 {
+    private $engine;
+    
+    function __construct(Engine $engine)
+    {
+        $this->engine = $engine;
+    }
     
     public function start()
     {
-        (new Engine)->runDrive();
+        $this->engine->runDrive();
     }
     
 }
